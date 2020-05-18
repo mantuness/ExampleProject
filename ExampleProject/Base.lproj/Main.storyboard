@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller One-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerOne" id="BYZ-38-t0r" customClass="ViewControllerOne" customModule="ExampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WB-yk-HbS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This ViewController is locked to portrait " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-gT-dYD">
+                                <rect key="frame" x="54" y="161.5" width="306" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58X-Pc-z83">
+                                <rect key="frame" x="107" y="212" width="200" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4Q0-gs-cE7"/>
+                                </constraints>
+                                <string key="text">Pay attention to this white UIView when presenting ViewControllerTwo (This issue happens in all devices but is more visible in iPhone 11, 11 Pro or 11 Pro Max)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAT-OC-Blw">
+                                <rect key="frame" x="114.5" y="433" width="185" height="30"/>
+                                <state key="normal" title="Present ViewControllerTwo"/>
+                                <connections>
+                                    <action selector="didTouchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KLI-jt-0wh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8WB-yk-HbS" secondAttribute="trailing" id="0JG-cM-m8m"/>
+                            <constraint firstItem="8WB-yk-HbS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4wk-ef-VMM"/>
+                            <constraint firstItem="aAT-OC-Blw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rT-vb-9QF"/>
+                            <constraint firstItem="ODI-gT-dYD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xl-QR-4lE"/>
+                            <constraint firstItem="8WB-yk-HbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bxq-N1-NGq"/>
+                            <constraint firstItem="aAT-OC-Blw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kbj-kd-RzI"/>
+                            <constraint firstItem="ODI-gT-dYD" firstAttribute="width" secondItem="58X-Pc-z83" secondAttribute="width" multiplier="1.53" id="Uiq-NQ-Fo1"/>
+                            <constraint firstItem="58X-Pc-z83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBu-Sb-C1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8WB-yk-HbS" secondAttribute="bottom" id="jVw-V9-Rcd"/>
+                            <constraint firstItem="58X-Pc-z83" firstAttribute="top" secondItem="ODI-gT-dYD" secondAttribute="bottom" constant="30" id="jp6-kq-CGD"/>
+                            <constraint firstItem="aAT-OC-Blw" firstAttribute="top" secondItem="58X-Pc-z83" secondAttribute="bottom" constant="30" id="lTu-zU-0UW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-651" y="136"/>
+        </scene>
+        <!--View Controller Two-->
+        <scene sceneID="SuH-A9-HTj">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerTwo" id="xWn-9z-2rz" customClass="ViewControllerTwo" customModule="ExampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mrp-rH-UY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw9-7N-ZcY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This ViewController is locked to Landscape " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-Sk-QyA">
+                                <rect key="frame" x="40.5" y="382.5" width="333.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="859-yO-6uO">
+                                <rect key="frame" x="180" y="433" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismiss" destination="xWn-9z-2rz" eventType="touchUpInside" id="aNb-tt-DsB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5e7-Sk-QyA" firstAttribute="width" secondItem="859-yO-6uO" secondAttribute="width" multiplier="6.17593" id="1dK-vP-LJe"/>
+                            <constraint firstItem="bw9-7N-ZcY" firstAttribute="leading" secondItem="t6x-CF-D6V" secondAttribute="leading" id="2mX-6e-Tfp"/>
+                            <constraint firstItem="859-yO-6uO" firstAttribute="top" secondItem="5e7-Sk-QyA" secondAttribute="bottom" constant="30" id="JJg-B2-Ujh"/>
+                            <constraint firstItem="t6x-CF-D6V" firstAttribute="bottom" secondItem="bw9-7N-ZcY" secondAttribute="bottom" id="U5E-vT-XOu"/>
+                            <constraint firstItem="bw9-7N-ZcY" firstAttribute="top" secondItem="t6x-CF-D6V" secondAttribute="top" id="ZJE-Jh-Wab"/>
+                            <constraint firstItem="t6x-CF-D6V" firstAttribute="trailing" secondItem="bw9-7N-ZcY" secondAttribute="trailing" id="dRv-Xa-SP7"/>
+                            <constraint firstItem="859-yO-6uO" firstAttribute="centerX" secondItem="Mrp-rH-UY8" secondAttribute="centerX" id="kWn-r1-m9o"/>
+                            <constraint firstItem="859-yO-6uO" firstAttribute="centerY" secondItem="Mrp-rH-UY8" secondAttribute="centerY" id="kYH-0g-2jJ"/>
+                            <constraint firstItem="5e7-Sk-QyA" firstAttribute="centerX" secondItem="Mrp-rH-UY8" secondAttribute="centerX" id="qff-gv-dKg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t6x-CF-D6V"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hq5-k6-mRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="136"/>
+        </scene>
+    </scenes>
+</document>
