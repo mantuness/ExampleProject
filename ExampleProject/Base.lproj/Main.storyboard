@@ -19,16 +19,17 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This ViewController is locked to portrait " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-gT-dYD">
-                                <rect key="frame" x="54" y="161.5" width="306" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This ViewController is locked to portrait " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODI-gT-dYD">
+                                <rect key="frame" x="54" y="205.5" width="306" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58X-Pc-z83">
-                                <rect key="frame" x="107" y="212" width="200" height="191"/>
+                                <rect key="frame" x="60" y="256" width="294" height="147"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="4Q0-gs-cE7"/>
+                                    <constraint firstAttribute="width" secondItem="58X-Pc-z83" secondAttribute="height" multiplier="2:1" id="V9p-CZ-yJ7"/>
                                 </constraints>
                                 <string key="text">Pay attention to this white UIView when presenting ViewControllerTwo (This issue happens in all devices but is more visible in iPhone 11, 11 Pro or 11 Pro Max)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -51,11 +52,11 @@
                             <constraint firstItem="ODI-gT-dYD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xl-QR-4lE"/>
                             <constraint firstItem="8WB-yk-HbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bxq-N1-NGq"/>
                             <constraint firstItem="aAT-OC-Blw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kbj-kd-RzI"/>
-                            <constraint firstItem="ODI-gT-dYD" firstAttribute="width" secondItem="58X-Pc-z83" secondAttribute="width" multiplier="1.53" id="Uiq-NQ-Fo1"/>
-                            <constraint firstItem="58X-Pc-z83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBu-Sb-C1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58X-Pc-z83" secondAttribute="trailing" constant="60" id="LtX-ir-xPi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8WB-yk-HbS" secondAttribute="bottom" id="jVw-V9-Rcd"/>
                             <constraint firstItem="58X-Pc-z83" firstAttribute="top" secondItem="ODI-gT-dYD" secondAttribute="bottom" constant="30" id="jp6-kq-CGD"/>
                             <constraint firstItem="aAT-OC-Blw" firstAttribute="top" secondItem="58X-Pc-z83" secondAttribute="bottom" constant="30" id="lTu-zU-0UW"/>
+                            <constraint firstItem="58X-Pc-z83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="vZr-Qc-2kD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,6 +77,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zU4-ni-8nh">
+                                <rect key="frame" x="50" y="144" width="314" height="618"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This ViewController is locked to Landscape " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-Sk-QyA">
                                 <rect key="frame" x="40.5" y="382.5" width="333.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,12 +99,16 @@
                         <constraints>
                             <constraint firstItem="5e7-Sk-QyA" firstAttribute="width" secondItem="859-yO-6uO" secondAttribute="width" multiplier="6.17593" id="1dK-vP-LJe"/>
                             <constraint firstItem="bw9-7N-ZcY" firstAttribute="leading" secondItem="t6x-CF-D6V" secondAttribute="leading" id="2mX-6e-Tfp"/>
+                            <constraint firstItem="zU4-ni-8nh" firstAttribute="leading" secondItem="t6x-CF-D6V" secondAttribute="leading" constant="50" id="2qV-5O-bKk"/>
                             <constraint firstItem="859-yO-6uO" firstAttribute="top" secondItem="5e7-Sk-QyA" secondAttribute="bottom" constant="30" id="JJg-B2-Ujh"/>
+                            <constraint firstItem="zU4-ni-8nh" firstAttribute="top" secondItem="t6x-CF-D6V" secondAttribute="top" constant="100" id="Msm-Qc-gwx"/>
                             <constraint firstItem="t6x-CF-D6V" firstAttribute="bottom" secondItem="bw9-7N-ZcY" secondAttribute="bottom" id="U5E-vT-XOu"/>
                             <constraint firstItem="bw9-7N-ZcY" firstAttribute="top" secondItem="t6x-CF-D6V" secondAttribute="top" id="ZJE-Jh-Wab"/>
+                            <constraint firstItem="t6x-CF-D6V" firstAttribute="trailing" secondItem="zU4-ni-8nh" secondAttribute="trailing" constant="50" id="c3K-UF-onG"/>
                             <constraint firstItem="t6x-CF-D6V" firstAttribute="trailing" secondItem="bw9-7N-ZcY" secondAttribute="trailing" id="dRv-Xa-SP7"/>
                             <constraint firstItem="859-yO-6uO" firstAttribute="centerX" secondItem="Mrp-rH-UY8" secondAttribute="centerX" id="kWn-r1-m9o"/>
                             <constraint firstItem="859-yO-6uO" firstAttribute="centerY" secondItem="Mrp-rH-UY8" secondAttribute="centerY" id="kYH-0g-2jJ"/>
+                            <constraint firstItem="t6x-CF-D6V" firstAttribute="bottom" secondItem="zU4-ni-8nh" secondAttribute="bottom" constant="100" id="o6e-rV-2mT"/>
                             <constraint firstItem="5e7-Sk-QyA" firstAttribute="centerX" secondItem="Mrp-rH-UY8" secondAttribute="centerX" id="qff-gv-dKg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t6x-CF-D6V"/>
